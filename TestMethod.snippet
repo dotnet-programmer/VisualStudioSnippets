@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>NUnit Test Method</Title>
+			<Shortcut>tm</Shortcut>
+			<Description>Code snippet for NUnit test method</Description>
+			<Author>Michał Ł.</Author>
+		</Header>
+		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>NUnit.Framework</Namespace>
+				</Import>
+			</Imports>
+			<Code Language="CSharp">
+				<![CDATA[[$Test$]
+              public void $Method$_$Scenario$_$ExceptedBehaviour$()
+              {
+                $end$
+              }]]>
+			</Code>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>Test</ID>
+					<Function>SimpleTypeName(global::NUnit.Framework.Test)</Function>
+				</Literal>
+				<Literal>
+					<ID>Method</ID>
+					<Tooltip>Replace with the name of the test method</Tooltip>
+					<Default>Method</Default>
+				</Literal>
+				<Literal>
+					<ID>Scenario</ID>
+					<Tooltip>Replace with the test scenario</Tooltip>
+					<Default>Scenario</Default>
+				</Literal>
+				<Literal>
+					<ID>ExceptedBehaviour</ID>
+					<Tooltip>Replace with the test excepted behaviour</Tooltip>
+					<Default>ExceptedBehaviour</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
